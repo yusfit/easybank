@@ -205,6 +205,7 @@ body{
 }
 
 .img-one img{
+    max-width: 100%;
     width: 220px;
     height: 170px;
 }
@@ -467,7 +468,6 @@ body{
         justify-content: center;
         position: relative;
         left: 5rem;
-        /* margin-right: 15rem; */
         margin-top: 40px;
         text-align: center;
     }
@@ -502,8 +502,6 @@ body{
     }
     
     .third_section{
-        /* display: flex;
-        flex-direction: column; */
         position: relative;
         left: 0rem;
         align-items: center;
@@ -523,6 +521,7 @@ body{
     }
 
     .img-one img{
+        max-width: 100%;
         width: 350px;
         height: 200px;
     }
@@ -550,7 +549,6 @@ body{
         gap: 30px;
         align-items: center;
         justify-content: center;
-        /* margin-top: 3rem; */
     }
 
     .grid{
@@ -600,10 +598,6 @@ body{
         background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         color: white;
     }
-
-    body{
-        overflow-x: hidden;
-    }
 }
 
     @media only screen and (max-width:725px){
@@ -628,19 +622,12 @@ body{
 
         .card p{
             font-size: 16px;
-            /* width: 120%; */
-            /* margin-bottom: 60px; */
-    }
-
-    body{
-        overflow-x: hidden;
     }
 
     .first_rh .phones_logo{
         background: url('./images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-position-x: 10px; */
         background-position-y: -30px;
         display: flex;
         justify-content: center;
@@ -669,27 +656,19 @@ body{
 
         .first_lh h1{
             width: 96%;
-            /* font-size: 4px; */
         }
 
         .card h2{
-            font-size: 20px;
+            font-size: 23px;
         }
 
         .card p{
             font-size: 14px;
             width: 100%;
         }
-
-        body{
-            overflow-x: hidden;
-        }
     }
 
     @media only screen and (max-width:350px){
-        body{
-            overflow-x: hidden;
-        }
         .drop-down_toggle{
         right: 16rem;
         }
@@ -706,4 +685,6 @@ body{
 
     }
 
-   
+    @media only screen and (max-width:350px){
+       
+    }
