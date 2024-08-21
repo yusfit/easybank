@@ -169,7 +169,7 @@ body{
     display: flex;
     position: relative;
     left: 9rem;
-    margin-right: 15rem;
+    margin-right: 10rem;
     margin-top: 40px;
 }
 
@@ -203,8 +203,8 @@ body{
 }
 
 .img-one img{
-    width: 190px;
-    height: 150px;
+    width: 220px;
+    height: 170px;
 }
 
 .name p{
@@ -235,11 +235,13 @@ body{
 .box_container{
     display: flex;
     gap: 40px;
+    max-width: 100%;
 }
 
 .container_card{
     background: white;
-    width: 190px;
+    width: 220px;
+    max-width: 100%;
     margin-bottom: 5rem;
 }
 
@@ -411,13 +413,13 @@ body{
     }
     
     .first_lh h1{
-        width: 50%;
+        width: 100%;
         font-size: 50px;
         font-weight: 400;
     }
     
     .first_lh p{
-        width:50%;
+        width:100%;
     }
 
     .first_button .sbtn{
@@ -448,12 +450,12 @@ body{
     .second_lh h1{
         margin-top: 60px;
         font-weight: 400;
-        width: 50%;
+        width: 100%;
         font-size: 3rem;
     }
     
     .second_lh p{
-        width: 40%;
+        width: 100%;
         font-size: 15px;
     }
 
@@ -462,10 +464,14 @@ body{
         align-items: center;
         justify-content: center;
         position: relative;
-        left: 7rem;
+        left: 4rem;
         /* margin-right: 15rem; */
         margin-top: 40px;
         text-align: center;
+    }
+
+    .card_img img{
+        width: 100px;
     }
 
     .card{
@@ -476,9 +482,13 @@ body{
         
     }
 
+    .card h2{
+        font-size: 35px;
+    }
+
     .card p{
-        font-size: 12px;
-        width: 40%;
+        font-size: 20px;
+        width: 100%;
         margin-bottom: 60px;
     }
 
@@ -494,6 +504,30 @@ body{
         left: 0rem;
         align-items: center;
         background: hsl(0, 0%, 98%);
+    }
+
+    .name p{
+        font-size: 12px;
+    }
+
+    .comment p{
+        font-size: 15px;
+    }
+
+    .comment h1{
+        font-size: 15px;
+    }
+
+    .img-one img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .container_card{
+        background: white;
+        width: 350px;
+        margin-bottom: 5rem;
+        padding-bottom: 10px;
     }
 
     .box_container{
@@ -563,7 +597,7 @@ body{
 
     @media only screen and (max-width:725px){
         .first_lh h1{
-            width: 70%;
+            /* width: 70%; */
             margin-top: 4rem;
             font-size: 50px;
             font-weight: 400;
@@ -577,10 +611,29 @@ body{
         }
 
         .card p{
-            font-size: 12px;
-            width: 80%;
+            font-size: 20px;
+            width: 100%;
             margin-bottom: 60px;
 
+    }
+
+    .first_rh .phones_logo{
+        background: url('./images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position-x: 10px; */
+        background-position-y: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .first_rh .phones_logo img{
+        width: 90%;
+        transform: translate(140x, -50px);
+        position: relative;
+        right: 1rem;
+        top: -6rem;
     }
 
     }
