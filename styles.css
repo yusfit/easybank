@@ -6,10 +6,11 @@
 
 p{
    color: hsl(233, 8%, 62%);
+   font-weight: 500;
 }
 
 h1, h2{
-    font-weight: 400;
+    font-weight: 700;
 }
 
 ul{
@@ -91,6 +92,7 @@ body{
     font-size: 10px;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: white;
+    font-weight: 700;
 }
 
 .sbtn:hover{
@@ -471,7 +473,7 @@ body{
     }
 
     .card_img img{
-        width: 100px;
+        width: 80px;
     }
 
     .card{
@@ -541,11 +543,11 @@ body{
 
     .footer{
         background: hsl(233, 26%, 24%);
-        height: 100vh;
+        height: 70vh;
         overflow-y: hidden;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         align-items: center;
         justify-content: center;
         /* margin-top: 3rem; */
@@ -579,7 +581,7 @@ body{
     .f_three{
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         align-items: center;
     }
 
@@ -597,6 +599,10 @@ body{
         font-size: 10px;
         background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         color: white;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 }
 
@@ -624,7 +630,10 @@ body{
             font-size: 16px;
             /* width: 120%; */
             /* margin-bottom: 60px; */
+    }
 
+    body{
+        overflow-x: hidden;
     }
 
     .first_rh .phones_logo{
@@ -662,9 +671,25 @@ body{
             width: 96%;
             /* font-size: 4px; */
         }
+
+        .card h2{
+            font-size: 20px;
+        }
+
+        .card p{
+            font-size: 14px;
+            width: 100%;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
     }
 
     @media only screen and (max-width:350px){
+        body{
+            overflow-x: hidden;
+        }
         .drop-down_toggle{
         right: 16rem;
         }
@@ -681,21 +706,4 @@ body{
 
     }
 
-    @media only screen and (max-width:416px){
-        .card h2{
-            font-size: 33px;
-            width: 100%;
-        }
-        .card p{
-            /* font-size: 16px; */
-            width: 100%;
-        }
-
-    }
-
-    @media only screen and (max-width:401.33px){
-        .card h2{
-            font-size: 28px;
-            width: 100%;
-        }
-    }
+   
