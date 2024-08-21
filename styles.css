@@ -270,11 +270,6 @@ body{
     gap: 50px;
 }
 
-.logo_down img{
-    fill: hsl(0, 0%, 100%);
-    filter: invert(100%);
-}
-
 .social_logo{
     display: flex;
     gap: 15px;
@@ -352,6 +347,11 @@ body{
 
     .header-button .sbtn{
         display: none;
+    }
+
+    .navbar .logo-img img{
+        position: relative;
+        right: 2rem;
     }
 
     .drop-down_toggle{
@@ -464,7 +464,7 @@ body{
         align-items: center;
         justify-content: center;
         position: relative;
-        left: 4rem;
+        left: 5rem;
         /* margin-right: 15rem; */
         margin-top: 40px;
         text-align: center;
@@ -494,12 +494,14 @@ body{
 
     .third_sec{
         background: hsl(0, 0%, 98%);
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     
     .third_section{
-        /* display: grid; */
+        /* display: flex;
+        flex-direction: column; */
         position: relative;
         left: 0rem;
         align-items: center;
@@ -531,16 +533,19 @@ body{
     }
 
     .box_container{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2px;
     }
 
     .footer{
         background: hsl(233, 26%, 24%);
         height: 100vh;
         overflow-y: hidden;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         align-items: center;
         justify-content: center;
         /* margin-top: 3rem; */
@@ -597,23 +602,28 @@ body{
 
     @media only screen and (max-width:725px){
         .first_lh h1{
-            /* width: 70%; */
-            margin-top: 4rem;
-            font-size: 50px;
+            width: 80%;
+            margin-top: 8rem;
+            font-size: 45px;
             font-weight: 400;
         }
 
         .drop-down_toggle{
             display: block;
             position: relative;
-            left: 4rem;
+            left: 2.5rem;
             top: 0rem;
         }
 
+        .navbar .logo-img img{
+            position: relative;
+            right: 4rem;
+        }
+
         .card p{
-            font-size: 20px;
-            width: 100%;
-            margin-bottom: 60px;
+            font-size: 16px;
+            /* width: 120%; */
+            /* margin-bottom: 60px; */
 
     }
 
@@ -636,4 +646,56 @@ body{
         top: -6rem;
     }
 
+    }
+
+    @media only screen and (max-width:480px){
+        .drop-down_toggle{
+            left: 1rem;
+        }
+
+        .navbar .logo-img img{
+            position: relative;
+            right: 2rem;
+        }
+
+        .first_lh h1{
+            width: 96%;
+            /* font-size: 4px; */
+        }
+    }
+
+    @media only screen and (max-width:350px){
+        .drop-down_toggle{
+        right: 16rem;
+        }
+
+        .navbar .logo-img img{
+            position: relative;
+            right: 1rem;
+        }
+
+        .first_lh h1{
+            width: 100%;
+            font-size: 35px;
+        }
+
+    }
+
+    @media only screen and (max-width:416px){
+        .card h2{
+            font-size: 33px;
+            width: 100%;
+        }
+        .card p{
+            /* font-size: 16px; */
+            width: 100%;
+        }
+
+    }
+
+    @media only screen and (max-width:401.33px){
+        .card h2{
+            font-size: 28px;
+            width: 100%;
+        }
     }
