@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Reuseable styles */
 p{
    color: hsl(233, 8%, 62%);
    font-weight: 500;
@@ -17,10 +18,14 @@ ul{
     list-style: none;
 }
 
+/* The body section */
+
 body{
     font-family: "Public Sans", sans-serif;
     overflow-x: hidden;
 }
+
+/* Navbar section */
 
 .navbar{
     display: flex;
@@ -100,6 +105,8 @@ body{
     background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
 }
 
+/* The first section */
+
 .first_section{
     display: flex;
     background: hsl(0, 0%, 98%);
@@ -143,6 +150,8 @@ body{
     position: relative;
     right: -6rem;
 }
+
+/* The second section */
 
 .second_section{
     background-color: hsl(220, 16%, 96%);
@@ -191,6 +200,8 @@ body{
     width: 58.6%;
     margin-bottom: 60px;
 }
+
+/* The third section */
 
 .third_sec{
     background: hsl(0, 0%, 98%);
@@ -253,13 +264,14 @@ body{
     margin-bottom: 2rem;
 }
 
+/* The footer */
+
 .footer{
     background: hsl(233, 26%, 24%);
     height: 30vh;
     overflow-y: hidden;
     display: flex;
     justify-content: space-around;
-    /* margin-top: 3rem; */
 }
 
 .grid{
@@ -311,7 +323,9 @@ body{
 } 
 
 
+/* Responsiveness */
 
+/* for screen size max of 1029.33px */
 @media only screen and (max-width:1029.33px){
     body{
         font-family: "Public Sans", sans-serif;
@@ -599,6 +613,7 @@ body{
         color: white;
     }
 }
+/* for screen size max of 725px */
 
     @media only screen and (max-width:725px){
         .first_lh h1{
@@ -644,6 +659,7 @@ body{
 
     }
 
+    /* for screen size max of 480px */
     @media only screen and (max-width:480px){
         .drop-down_toggle{
             left: 1rem;
@@ -668,6 +684,7 @@ body{
         }
     }
 
+    /* for screen size max of 350px */
     @media only screen and (max-width:350px){
         .drop-down_toggle{
         right: 16rem;
@@ -683,8 +700,4 @@ body{
             font-size: 35px;
         }
 
-    }
-
-    @media only screen and (max-width:350px){
-       
     }
